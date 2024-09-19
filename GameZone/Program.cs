@@ -13,6 +13,11 @@ namespace GameZone
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+            // Register the services
+            builder.Services.AddScoped<ICategoriesService, CategoriesService>();
+            builder.Services.AddScoped<IDevicesService, DevicesService>();
+            builder.Services.AddScoped<IGamesService, GamesService>();
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

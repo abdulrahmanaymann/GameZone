@@ -7,7 +7,7 @@
 namespace GameZone.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class IntialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -107,11 +107,11 @@ namespace GameZone.Migrations
                 columns: new[] { "Id", "Icon", "Name" },
                 values: new object[,]
                 {
-                    { 1, "xbox.png", "Xbox" },
-                    { 2, "playstation.png", "PlayStation" },
-                    { 3, "nintendo.png", "Nintendo" },
-                    { 4, "pc.png", "PC" },
-                    { 5, "mobile.png", "Mobile" }
+                    { 1, "bi bi-xbox", "Xbox" },
+                    { 2, "bi bi-playstation", "PlayStation" },
+                    { 3, "bi bi-nintendo-switch", "Nintendo Switch" },
+                    { 4, "bi bi-pc-display", "PC" },
+                    { 5, "bi bi-android", "Android" }
                 });
 
             migrationBuilder.CreateIndex(

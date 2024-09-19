@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GameZone.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240918200743_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240919150757_IntialCreate")]
+    partial class IntialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -120,32 +120,32 @@ namespace GameZone.Migrations
                         new
                         {
                             Id = 1,
-                            Icon = "xbox.png",
+                            Icon = "bi bi-xbox",
                             Name = "Xbox"
                         },
                         new
                         {
                             Id = 2,
-                            Icon = "playstation.png",
+                            Icon = "bi bi-playstation",
                             Name = "PlayStation"
                         },
                         new
                         {
                             Id = 3,
-                            Icon = "nintendo.png",
-                            Name = "Nintendo"
+                            Icon = "bi bi-nintendo-switch",
+                            Name = "Nintendo Switch"
                         },
                         new
                         {
                             Id = 4,
-                            Icon = "pc.png",
+                            Icon = "bi bi-pc-display",
                             Name = "PC"
                         },
                         new
                         {
                             Id = 5,
-                            Icon = "mobile.png",
-                            Name = "Mobile"
+                            Icon = "bi bi-android",
+                            Name = "Android"
                         });
                 });
 

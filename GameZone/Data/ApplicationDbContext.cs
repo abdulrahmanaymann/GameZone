@@ -1,6 +1,4 @@
-﻿using GameZone.Models;
-
-namespace GameZone.Data
+﻿namespace GameZone.Data
 {
     public class ApplicationDbContext : DbContext
     {
@@ -33,11 +31,11 @@ namespace GameZone.Data
             );
 
             modelBuilder.Entity<Device>().HasData(
-                new Device { Id = 1, Name = "Xbox", Icon = "xbox.png" },
-                new Device { Id = 2, Name = "PlayStation", Icon = "playstation.png" },
-                new Device { Id = 3, Name = "Nintendo", Icon = "nintendo.png" },
-                new Device { Id = 4, Name = "PC", Icon = "pc.png" },
-                new Device { Id = 5, Name = "Mobile", Icon = "mobile.png" }
+                new Device { Id = 1, Name = "Xbox", Icon = "bi bi-xbox" },
+                new Device { Id = 2, Name = "PlayStation", Icon = "bi bi-playstation" },
+                new Device { Id = 3, Name = "Nintendo Switch", Icon = "bi bi-nintendo-switch" },
+                new Device { Id = 4, Name = "PC", Icon = "bi bi-pc-display" },
+                new Device { Id = 5, Name = "Android", Icon = "bi bi-android" }
             );
 
             modelBuilder.Entity<GameDevice>().HasKey(e => new { e.GameId, e.DeviceId });

@@ -10,14 +10,16 @@
 
         public IEnumerable<SelectListItem> Categories { get; set; } = Enumerable.Empty<SelectListItem>();
 
-        public List<int> SelectedDevices { get; set; } = new();
-
         [Display(Name = "Supported Devices")]
+        public List<int> SelectedDevices { get; set; } = default!;
+
         public IEnumerable<SelectListItem> Devices { get; set; } = Enumerable.Empty<SelectListItem>();
 
         [MaxLength(2500)]
         public string Description { get; set; } = string.Empty;
 
+        [AllowedExtensions(FileSettings.AllowedExtensions),
+            MaxFileSize(FileSettings.MaxFileSizeInBytes)]
         public IFormFile Cover { get; set; } = default!;
     }
 }
