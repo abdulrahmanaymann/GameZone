@@ -1,6 +1,5 @@
 using System.Diagnostics;
 using GameZone.Models;
-using Microsoft.AspNetCore.Mvc;
 
 namespace GameZone.Controllers
 {
@@ -14,11 +13,6 @@ namespace GameZone.Controllers
         }
 
         public IActionResult Index()
-        {
-            return View();
-        }
-
-        public IActionResult Privacy()
         {
             return View();
         }

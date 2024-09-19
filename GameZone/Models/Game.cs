@@ -1,0 +1,19 @@
+﻿namespace GameZone.Models
+{
+    public class Game : BaseEntity
+    {
+        [MaxLength(2500)]
+        public string Description { get; set; } = string.Empty;
+
+        [MaxLength(500)]
+        public string Cover { get; set; } = string.Empty;
+
+        public int CategoryId { get; set; } // Foreign key
+
+        // Navigation property ( one-to-many relationship)
+        public Category Category { get; set; } = default!;
+
+        // Navigation property ( many-to-many relationship)
+        public ICollection<GameDevice> Devices { get; set; } = [];
+    }
+}
