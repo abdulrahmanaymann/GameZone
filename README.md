@@ -8,7 +8,7 @@ This project is a **CRUD (Create, Read, Update, Delete)** application built with
 - View a list of all records.
 - Edit/update existing records.
 - Delete records.
-- 
+
 ## Technologies Used
 - **ASP.NET Core MVC**
 - **Entity Framework Core**
